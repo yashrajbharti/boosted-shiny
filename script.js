@@ -111,7 +111,7 @@ const buildUI = (pokemonArray) => {
   }
   output.querySelectorAll("img").forEach((img) => {
     img.addEventListener("click", () => {
-      img.style.scale = "1.1";
+      img.style.scale = "1.2";
       img.style.transformOrigin = "bottom";
     });
   });
