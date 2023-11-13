@@ -21,14 +21,28 @@ output {
 .pokemon {
     inline-size: 40px;
     position: relative;
+    display: inline-block;
+}
+
+div {
+    position: relative;
+    display: inline-block;
 }
 
 .wild::after {
     content: url(./img/Wild.png);
     position: absolute;
+    scale: 0.1;
+    transform-origin: 0;
+    inset-block-end: -48px;
+    inset-inline-start: 35px;
 }
 
 .event::after {
     content: url(./img/Event.png);
     position: absolute;
+    scale: 0.1;
+    transform-origin: 0;
+    inset-block-end: -48px;
+    inset-inline-start: 35px;
 }

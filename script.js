@@ -98,13 +98,15 @@ const sortArrayBasedOnPokedexData = (pokedexData, pokemonArray) => {
 
 const buildUI = (pokemonArray) => {
   for (let item of pokemonArray) {
+    let div = document.createElement("div");
     item = item.includes("mrmime") ? item.replace(/mrmime/, "mr-mime") : item;
     let img = document.createElement("img");
     img.classList.add("pokemon");
-    wildPokemon.has(item) && img.classList.add("wild");
-    eventPokemon.has(item) && img.classList.add("event");
+    wildPokemon.has(item) && div.classList.add("wild");
+    eventPokemon.has(item) && div.classList.add("event");
     img.src = `https://img.pokemondb.net/sprites/home/shiny/${item}.png`;
     img.alt = item;
-    output.appendChild(img);
+    div.appendChild(img);
+    output.appendChild(div);
   }
 };
