@@ -12,14 +12,14 @@ body {
 }
 
 output {
-    inline-size: 460px;
+    inline-size: 1380px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px 30px;
 }
 
 .pokemon {
-    inline-size: 40px;
+    inline-size: 160px;
     position: relative;
     display: inline-block;
 }
@@ -31,18 +31,16 @@ div {
 
 .wild::after {
     content: url(./img/Wild.png);
-    position: absolute;
-    scale: 0.1;
-    transform-origin: 0;
-    inset-block-end: -48px;
-    inset-inline-start: 35px;
 }
 
 .event::after {
     content: url(./img/Event.png);
+}
+
+:is(.wild, .event)::after {
     position: absolute;
-    scale: 0.1;
+    scale: 0.4;
     transform-origin: 0;
-    inset-block-end: -48px;
-    inset-inline-start: 35px;
+    inset-block-end: -30px;
+    inset-inline-start: 125px;
 }
