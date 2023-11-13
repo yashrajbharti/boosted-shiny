@@ -109,4 +109,10 @@ const buildUI = (pokemonArray) => {
     div.appendChild(img);
     output.appendChild(div);
   }
+  output.querySelectorAll("img").forEach((img) => {
+    img.addEventListener("click", () => {
+      img.style.scale = "1.1";
+      img.style.transformOrigin = "bottom";
+    });
+  });
 };
