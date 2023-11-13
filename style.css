@@ -20,4 +20,10 @@ output {
 
 .pokemon {
     inline-size: 40px;
+    position: relative;
+}
+
+.wild::after {
+    content: url(./img/Wild.png);
+    position: absolute;
 }
