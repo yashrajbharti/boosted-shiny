@@ -51,3 +51,8 @@ div {
     inset-block-end: -30px;
     inset-inline-start: 105px;
 }
+
+.small {
+    scale: 1.4;
+    transform-origin: bottom;
+}

@@ -105,6 +105,7 @@ const buildUI = (pokemonArray) => {
     item = item.replace(/mrmime/, "mr-mime").replace(/mimejr/, "mime-jr");
     let img = document.createElement("img");
     img.classList.add("pokemon");
+    item.includes("farfetchd") && img.classList.add("small");
     wildPokemon.has(item) && div.classList.add("wild");
     eventPokemon.has(item) && div.classList.add("event");
     img.src = `https://img.pokemondb.net/sprites/home/shiny/${item}.png`;
