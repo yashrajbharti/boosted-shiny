@@ -12,12 +12,17 @@ body {
 }
 
 output {
-    inline-size: 1380px;
+    inline-size: 2280px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px 80px;
     justify-content: flex-start;
     align-items: center;
+}
+
+img:not(.pokemon) {
+    margin-inline-end: auto;
+    padding: 30px;
 }
 
 .pokemon {
