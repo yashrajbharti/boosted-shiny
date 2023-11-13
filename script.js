@@ -102,8 +102,7 @@ const sortArrayBasedOnPokedexData = (pokedexData, pokemonArray) => {
 const buildUI = (pokemonArray) => {
   for (let item of pokemonArray) {
     let div = document.createElement("div");
-    item = item.includes("mrmime") ? item.replace(/mrmime/, "mr-mime") : item;
-    item = item.includes("mimejr") ? item.replace(/mimejr/, "mime-jr") : item;
+    item = item.replace(/mrmime/, "mr-mime").replace(/mimejr/, "mime-jr");
     let img = document.createElement("img");
     img.classList.add("pokemon");
     wildPokemon.has(item) && div.classList.add("wild");
