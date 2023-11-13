@@ -2,7 +2,7 @@
 let rawText = "";
 let wildPokemon = new Map();
 let eventPokemon = new Map();
-let output = document.querySelector("output");
+const output = document.querySelector("output");
 
 const getWildPokemonData = async () => {
   // Replace ./data.json with your JSON feed
