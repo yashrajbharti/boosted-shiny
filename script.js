@@ -91,21 +91,12 @@ const getPokedexInfo = async (pokemonArray) => {
 
 const sortArrayBasedOnPokedexData = (pokedexData, pokemonArray) => {
   pokemonArray.sort(
-    (a, b) =>
-      pokedexData[
-        a
-          .split("-")[0]
-          .replace(/mrmime/, "mr. mime")
-          .replace(/mimejr/, "mime jr.")
-      ] -
-      pokedexData[
-        b
-          .split("-")[0]
-          .replace(/mrmime/, "mr. mime")
-          .replace(/mimejr/, "mime jr.")
-      ]
+    (a, b) => pokedexData[a.split("-")[0]] - pokedexData[b.split("-")[0]]
   );
   buildUI(pokemonArray);
+
+  // pokemonArray.forEach((item) => console.info(pokedexData[item.split("-")[0]]));
+  // above line checks if sorting happened correctly
 };
 
 const buildUI = (pokemonArray) => {
