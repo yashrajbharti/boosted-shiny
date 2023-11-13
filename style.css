@@ -12,7 +12,7 @@ body {
 }
 
 output {
-    inline-size: 2280px;
+    inline-size: 2000px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px 80px;
