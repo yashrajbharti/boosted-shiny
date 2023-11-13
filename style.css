@@ -15,11 +15,11 @@ output {
     inline-size: 1380px;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px 30px;
+    gap: 30px 80px;
 }
 
 .pokemon {
-    inline-size: 160px;
+    inline-size: 120px;
     position: relative;
     display: inline-block;
 }
@@ -39,8 +39,8 @@ div {
 
 :is(.wild, .event)::after {
     position: absolute;
-    scale: 0.4;
+    scale: 0.3;
     transform-origin: 0;
     inset-block-end: -30px;
-    inset-inline-start: 125px;
+    inset-inline-start: 105px;
 }
