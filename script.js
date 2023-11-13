@@ -91,7 +91,9 @@ const getPokedexInfo = async (pokemonArray) => {
 
 const sortArrayBasedOnPokedexData = (pokedexData, pokemonArray) => {
   pokemonArray.sort(
-    (a, b) => pokedexData[a.split("-")[0]] - pokedexData[b.split("-")[0]]
+    (a, b) =>
+      pokedexData[a.split("-")[0].replace(/mrmime/, "mr. mime")] -
+      pokedexData[b.split("-")[0].replace(/mrmime/, "mr. mime")]
   );
   buildUI(pokemonArray);
 };
