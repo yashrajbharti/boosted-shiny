@@ -1,3 +1,4 @@
+"use strict";
 let rawText = "";
 let wildPokemon = new Map();
 let eventPokemon = new Map();
@@ -66,8 +67,7 @@ getBoostedPokemonData();
 
 const buildArray = (text) => {
   const pokemonArray = [];
-  rawArray = text.split(" ");
-  for (const item of rawArray) {
+  for (const item of text.split(" ")) {
     pokemonArray.push(item);
   }
   getPokedexInfo(pokemonArray);
