@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0e1012;
+    color: #fafffd;
+    display: grid;
+    place-items: center;
+}
+
+output {
+    inline-size: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 30px;
+}
+
+.pokemon {
+    inline-size: 40px;
+}
