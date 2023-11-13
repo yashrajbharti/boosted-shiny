@@ -27,3 +27,8 @@ output {
     content: url(./img/Wild.png);
     position: absolute;
 }
+
+.event::after {
+    content: url(./img/Event.png);
+    position: absolute;
+}
