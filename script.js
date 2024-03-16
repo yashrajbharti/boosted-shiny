@@ -108,6 +108,7 @@ const buildUI = (pokemonArray) => {
     item.includes("farfetchd") && img.classList.add("small");
     wildPokemon.has(item) && div.classList.add("wild");
     eventPokemon.has(item) && div.classList.add("event");
+    if (!item.trim()) continue;
     img.src = `https://img.pokemondb.net/sprites/home/shiny/${item}.png`;
     img.alt = item;
     div.appendChild(img);
